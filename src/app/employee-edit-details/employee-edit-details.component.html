@@ -1,0 +1,37 @@
+<div class="container">
+  <h5>Employee Infomation</h5>
+  <div class="row">
+    <div class="col-md-12">
+
+      <form [formGroup]="employeeForm">
+        <div class="form-group">
+              <input type="text" [disabled]="employeeID" class="form-control w-100" formControlName="id" name="id" placeholder="Employee ID" [readOnly]="isEdit">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control w-100" formControlName="name" name="name" placeholder="Name">
+        </div>
+      
+        <div class="form-group">
+          <input type="text" class="form-control w-100" formControlName="email" name="email" placeholder="email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control w-100" formControlName="salary" name="salary" placeholder="salary">
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-md-7">
+
+        </div>
+        <div class="col-md-5">
+          <button class="custum_btn" (click)="add()" *ngIf="isEdit == false">Add</button>
+          <button  class="custum_btn"(click)="edit()" *ngIf="isEdit">Edit</button> 
+          <button  class="custum_btn"  [routerLink]="['/employee']" >close</button>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+

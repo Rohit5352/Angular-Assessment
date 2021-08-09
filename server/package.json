@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "employee data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ass",
+  "license": "ISC",
+  "dependencies": {
+    "@auth0/angular-jwt": "^5.0.2",
+    "angular2-jwt": "^0.2.3",
+    "json-serve": "^0.1.0",
+    "url-polyfill": "^1.1.12"
+  }
+}
